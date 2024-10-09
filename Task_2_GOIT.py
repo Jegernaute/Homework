@@ -18,7 +18,7 @@ def get_cats_info(path):
                 if len(cat_dict["id"]) == 24: 
                     try:
                         age = int(cat_dict["age"]) 
-                        if age <= 38:  
+                        if age <= 38: # це число бо це вік найдовше прожившої кішки   
                             finish_list.append(cat_dict)  
                     except ValueError:
                         print(f"Incorrect age format for id: {cat_dict['id']}") 
